@@ -1,1 +1,1 @@
-#!/usr/bin/env python
+print('cisco')
