@@ -1,2 +1,0 @@
-print('cisco')
-print('Juniper')
