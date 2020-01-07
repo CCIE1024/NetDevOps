@@ -68,3 +68,6 @@ Result:
 ╰─$ python3 test.py
 {'a': 1, 'b': 2, 'c': 3, 'd': 4, 'e': 5}
 ```
+
+#### 3、json 类型转换到 python 的类型对照表：
+<img alt="PyJSON-c7b9f0ec.png" src="assets/PyJSON-c7b9f0ec.png" width="" height="" >
