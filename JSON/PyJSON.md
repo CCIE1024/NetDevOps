@@ -1,6 +1,22 @@
 该笔记将记录如何在Python中编码和解码JSON对象
+## 1、JSON概念
+json是一种通用的数据类型，任何语言都认识
+&nbsp;
 
-## 1、JSON函数:
+接口返回的数据类型都是json
+&nbsp;
+
+长得像字典，形式也是k-v { }
+&nbsp;
+
+其实json是字符串
+&nbsp;
+
+字符串不能用key、value来取值，要先转成字典才可以
+
+
+
+## 2、JSON函数:
 使用 JSON 函数需要导入 json 库: import json。
 
 <img alt="PyJSON-74087570.png" src="assets/PyJSON-74087570.png" width="" height="" >
@@ -35,6 +51,7 @@ Result:
 <class 'list'>
 ```
 
+
 ```python
 import json
 print (json.dumps({'a': 'Runoob', 'b': 7}, sort_keys=True, indent=4, separators=(',', ': ')))
@@ -49,7 +66,7 @@ print (json.dumps({'a': 'Runoob', 'b': 7}, sort_keys=True, indent=4, separators=
 #### 3、python 原始类型向 json 类型的转化对照表：
 <img alt="PyJSON-7d95cb0a.png" src="assets/PyJSON-7d95cb0a.png" width="" height="" >
 
-### 二、json.loads
+### 二、json.loads ——>json字符串转Python字典
 json.loads 用于解码 JSON 数据。该函数返回 Python 字段的数据类型。
 #### 1、语法
 ```
@@ -57,6 +74,7 @@ json.loads(s[, encoding[, cls[, object_hook[, parse_float[, parse_int[, parse_co
 ```
 #### 2、实例
 ```python
+Case-1
 #!/usr/bin/python
 import json
 jsonData = '{"a":1,"b":2,"c":3,"d":4,"e":5}';
@@ -68,6 +86,17 @@ Result:
 ╰─$ python3 test.py
 {'a': 1, 'b': 2, 'c': 3, 'd': 4, 'e': 5}
 ```
+```python
+Case-2
+
+
+```
+
+
+
+
+
+
 
 #### 3、json 类型转换到 python 的类型对照表：
 <img alt="PyJSON-c7b9f0ec.png" src="assets/PyJSON-c7b9f0ec.png" width="" height="" >
